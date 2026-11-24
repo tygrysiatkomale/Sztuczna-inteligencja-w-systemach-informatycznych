@@ -1,0 +1,47 @@
+{
+  "source": "https://github.com/allenai/scifact",
+  "seed": 42,
+  "corpus": {
+    "documents": 5183,
+    "mean_sentences_per_abstract": 8.87,
+    "median_sentences_per_abstract": 8
+  },
+  "splits": {
+    "original_train": {
+      "claims": 809,
+      "labels": {
+        "CONTRADICT": 173,
+        "NOINFO": 304,
+        "SUPPORT": 332
+      },
+      "claims_with_gold_evidence": 505
+    },
+    "train_fit": {
+      "claims": 647,
+      "labels": {
+        "CONTRADICT": 138,
+        "NOINFO": 243,
+        "SUPPORT": 266
+      },
+      "claims_with_gold_evidence": 404
+    },
+    "tune": {
+      "claims": 162,
+      "labels": {
+        "CONTRADICT": 35,
+        "NOINFO": 61,
+        "SUPPORT": 66
+      },
+      "claims_with_gold_evidence": 101
+    },
+    "final_eval_original_dev": {
+      "claims": 300,
+      "labels": {
+        "CONTRADICT": 64,
+        "NOINFO": 112,
+        "SUPPORT": 124
+      },
+      "claims_with_gold_evidence": 188
+    }
+  }
+}
