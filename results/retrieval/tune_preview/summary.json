@@ -1,0 +1,30 @@
+{
+  "generated_utc": "2026-11-25T00:00:42.692540+00:00",
+  "config": {
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "top_k": 5,
+    "rrf_k": 60,
+    "rrf_depth": 100,
+    "candidate_k": 20,
+    "split": "tune",
+    "limit": 10
+  },
+  "metrics": [
+    {
+      "variant": "E1",
+      "split": "tune",
+      "preview": true,
+      "queries": 10,
+      "positive_claims": 7,
+      "no_gold_claims_excluded": 3,
+      "recall_at_5": 0.761905,
+      "hit_at_5": 0.857143,
+      "mrr_at_5": 0.671429,
+      "ndcg_at_5": 0.687496,
+      "avg_latency_ms": 27.06,
+      "median_latency_ms": 11.95
+    }
+  ],
+  "methodology": "Recall/MRR/nDCG średnia po claims z >=1 gold evidence; NOINFO wyłączone. Latency mierzona po inicjalizacji modeli i cache, pierwsze zapytanie może zawierać koszt wczytania modelu."
+}

@@ -1,0 +1,2 @@
+variant,split,preview,queries,positive_claims,no_gold_claims_excluded,recall_at_5,hit_at_5,mrr_at_5,ndcg_at_5,avg_latency_ms,median_latency_ms
+E1,tune,True,10,7,3,0.761905,0.857143,0.671429,0.687496,27.06,11.95
